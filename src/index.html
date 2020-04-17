@@ -29,6 +29,9 @@
       overflow: auto;
       padding: 2em;
     }
+    p{
+      text-align: justify;
+    }
   </style>
   <style media="print">
     body {
@@ -169,6 +172,7 @@
     .skills>.wrapper>ul>li {
       line-height: 1.2;
       margin-bottom: 8px;
+      text-align: justify;
     }
   </style>
   <style>
@@ -273,7 +277,9 @@
         男 | 25岁 | 前端开发工程师
       </p>
       <p>
-        手机：13002212125 | 微信：13002212125 | 邮箱：lihechn@outlook.com
+        手机：<a href="tel:13002212125">13002212125</a> |
+        微信：13002212125 |
+        邮箱：<a href="mailto:lihechn@outlook.com">lihechn@outlook.com</a>
       </p>
     </section>
 
@@ -291,7 +297,7 @@
       <h2>教育经历</h2>
       <p>
         <span><time>2013年</time>~<time>2017年</time></span>
-        天津大学 光电子科学与技术 本科</p>
+        天津大学（985/211） 光电子科学与技术 本科</p>
     </section>
     <div class="hr"></div>
 
@@ -337,7 +343,7 @@
         </li>
         <li>
           <header>
-            <h3>导航网站</h3>
+            <h3>星球导航</h3>
             <span>
               <a href="https://github.com/leeheart/nav-1">源码链接</a>
               <a href="https://leeheart.github.io/nav-1/dist/index.html">项目预览</a>
@@ -387,6 +393,14 @@
     </section>
     
     <div class="hr"></div>
+
+    <style>
+      @media(max-width: 500px){
+        .others ul>li{
+          overflow: auto;
+        }
+      }
+    </style>
 
     <section class="others">
       <h2>相关链接</h2>
