@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>个人简历</title>
+  <style>
+    .clearfix::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #eee;
+      margin: 20px 0;
+    }
+
+    article {
+      width: 21cm;
+      min-height: 29.7cm;
+      background: white;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 2em;
+    }
+  </style>
+  <style media="print">
+    body {
+      margin: 0;
+    }
+
+    .page2 {
+      page-break-before: always;
+      margin-top: 30px;
+    }
+  </style>
+  <style>
+    body {}
+
+    p {
+      margin: .3em 0;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+    }
+
+    ol,
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    strong {
+      font-weight: normal;
+      color: #f60;
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+
+    p,
+    li {
+      color: #666;
+    }
+
+    strong {
+      font-weight: normal;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    .bio {
+      position: relative;
+    }
+
+    .bio img {
+      /* position: absolute;
+      top: 0;
+      right: 0; */
+      float: left;
+      margin-right: 50px;
+    }
+  </style>
+  <style>
+    .projects {}
+
+    .projects p {
+      color: #666;
+    }
+
+    .projects strong {
+      color: #E74C3C
+    }
+
+    .projects>ol {
+      margin-top: 0;
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    .projects>ol>li {
+      margin-bottom: 24px;
+    }
+
+    .projects>ol>li>header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .projects>ol>li h3 {
+      display: inline-block;
+    }
+
+    .projects a{
+      color: #E74C3C;
+    }
+  </style>
+  <style>
+    .skills {}
+
+    #skills {
+
+      width: 500px;
+      height: 270px;
+    }
+
+    .skills>.wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skills>.wrapper>:first-child {
+      margin-right: 24px;
+    }
+
+    .skills>.wrapper>#skills {}
+
+    .skills>.wrapper>ul {
+      color: #666;
+    }
+
+    .skills>.wrapper strong {
+      color: #E74C3C;
+    }
+
+    .skills>.wrapper>ul>li {
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+  </style>
+  <style>
+    .openSource {}
+
+    .openSource>h2 {}
+
+    .openSource header img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .openSource>ul {}
+
+    .openSource>ul>li {
+      margin-bottom: 24px;
+    }
+
+    .openSource header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .openSource h3 {}
+  </style>
+  <style>
+    .jobs {}
+
+    .jobs>h2 {}
+
+    .jobs>ol {}
+
+    .jobs>ol>li {
+      margin: 12px 0;
+    }
+
+    .jobs header {
+      display: flex;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .jobs header>h3 {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .jobs header>h4 {
+      margin-left: 1em;
+      font-size: 18px;
+    }
+
+    .jobs header>span {
+      font-size: 18px;
+      margin-left: auto;
+    }
+  </style>
+  <style>
+    @media (max-width: 500px) {
+      body {
+        margin: 0;
+      }
+
+      article {
+        width: auto;
+        height: auto;
+      }
+
+      .bio img {
+        display: none;
+      }
+
+      .skills .wrapper {
+        flex-direction: column;
+      }
+
+      #skills {
+        width: auto;
+      }
+
+      .jobs header {
+        flex-direction: column;
+      }
+
+      .jobs header>h3,
+      .jobs header>h4,
+      .jobs header>span {
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <section class="bio clearfix">
+      <img src="./images/photo.jpg" alt="" width="100">
+      <h1>李贺</h1>
+      <p>
+        男 | 25岁 | 前端开发工程师
+      </p>
+      <p>
+        手机：13002212125 | 微信：13002212125 | 邮箱：lihechn@outlook.com
+      </p>
+    </section>
+
+    <div class="hr"></div>
+    <style>
+      .hr {
+        height: 1px;
+        background: #000;
+        margin-top: 10px;
+        background: #C1C1C1;
+      }
+    </style>
+
+    <section class="education">
+      <h2>教育经历</h2>
+      <p>
+        <span><time>2013年</time>~<time>2017年</time></span>
+        天津大学 光电子科学与技术 本科</p>
+    </section>
+    <div class="hr"></div>
+
+    <section class="skills">
+      <h2>专业技能</h2>
+      <div class="wrapper">
+        <ul style="list-style: outside;margin-left: 32px;">
+          <li>熟练使用 HTML 和 CSS 制作静态页面，完美还原设计稿 </li>
+          <li>掌握 JavaScript 语法，熟悉 <strong>ES6</strong> 新特性，包括箭头函数、let、const、Promise、析构赋值等</li>
+          <li>掌握 <strong>Vue 全家桶</strong>的使用，包括 Vue Cli、Vue Router、Vuex，理解 Vue 响应式原理</li>
+          <li>了解 React/React Hooks, 了解 React 周边工具如 create-react-app、React Router、Redux 等 </li>
+          <li>熟悉<strong>前后端分离</strong>相关技术，如 AJAX、跨域、前端路由、Cookie、Session 等</li>
+          <li>了解 <strong>TypeScript</strong> 的语法，以下口袋账本项目就是基于Vue/TS开发</li>
+          <li>了解前端模块化，以及前端打包工具 <strong>Webpack</strong> 的使用和配置</li>
+        </ul>
+      </div>
+    </section>
+    <div class="hr"></div>
+
+    <section class="projects">
+      <h2>项目作品</h2>
+      <ol>
+        <li>
+          <header>
+            <h3>口袋账本 - 移动端SPA应用</h3>
+            <span>
+              <a href="javascript:;">源码私有</a>
+              <a href="https://leeheart.github.io/pocket-website/">项目预览</a>
+            </span>
+          </header>
+          <p>
+            本项目是一款基于<strong>Vue</strong>、<strong>TypeScript</strong>、<strong>Vue Router</strong>、<strong>Vuex</strong>构建的极简记账类单页面应用。
+          </p>
+          <p>
+            项目的 UI 设计参考了一些同类应用的风格，源码由本人独立实现，所有组件均使用 Vue 类组件风格 + TypeScript 装饰器语法，CSS 方面使用了 <strong>Sass</strong> 的语法。
+          </p>
+          <p>
+            项目包含记账、标签管理、统计三个页面，使用 Vue 的官方路由管理器 Vue Router 实现标签页面的切换，使用 Vuex 进行全局状态管理。
+          </p>
+          <p>
+            项目开发过程中遇到的一些 Webpack 配置相关的问题，其解决方案记录在本人<a href="https://juejin.im/post/5e991758f265da47d2025dc3">博客</a>中。
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>导航网站</h3>
+            <span>
+              <a href="https://github.com/leeheart/nav-1">源码链接</a>
+              <a href="https://leeheart.github.io/nav-1/dist/index.html">项目预览</a>
+            </span>
+          </header>
+          <p>
+            开发人员通常都有一些经常浏览的网站，这是我在学习 <strong>jQuery</strong> 时，从自己的需求出发，制作的一个很实用的导航页面。采用了极简设计风格，支持自定义添加/删除网址、快捷搜索等功能，并且支持页面布局<strong>响应式</strong>特点。
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>用 CSS 画一个蓝胖子</h3>
+            <span>
+              <a href="https://github.com/leeheart/Doraemon">源码链接</a>
+              <a href="https://leeheart.github.io/Doraemon/dist/index.html">项目预览</a>
+            </span>
+          </header>
+          <p>
+            这是我在学习 <strong>CSS3</strong> 时，使用纯 CSS 制作的一个卡通人物，综合运用了伪元素、定位、transform 等 CSS 常用语法和属性，同时还使用定时器动态展示绘制的过程，并且支持播放速度的切换。
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>涂鸦画板</h3>
+            <span>
+              <a href="https://github.com/leeheart/canvas">源码链接</a>
+              <a href="https://leeheart.github.io/canvas/dist/index.html">项目预览</a>
+            </span>
+          </header>
+          <p>使用 <strong>Canvas</strong> 的 API 做的一个小作品，可进行简单的绘画操作，功能包括画笔选色、橡皮擦、清空画板等，并同时适配 PC 与移动端。</p>
+        </li>
+        <li>
+          <header>
+            <h3>自己封装的 DOM 库</h3>
+            <a href="https://github.com/leeheart/dom-1">源码链接</a>
+          </header>
+          <p>原生的 DOM API 大多复杂、冗长，使用非常不便利，我自己封装了一些常用 DOM 操作，采用对象风格，提供 window.dom 全局对象，实现了元素选择、创建、节点的增删改查、属性读写、事件监听等常用功能。</p>
+        </li>
+        <li>
+          <header>
+            <h3>模拟实现 jQuery 常用 API</h3>
+            <a href="https://github.com/leeheart/dom-2">源码链接</a>
+          </header>
+          <p>jQuery 采用了链式风格的封装思路，在体会了 jQuery 的设计思想后，自己模拟实现了 jQuery 风格的一些常用  DOM 操作的封装，加深对 jQuery 设计思想的理解。</p>
+        </li>
+      </ol>
+    </section>
+    
+    <div class="hr"></div>
+
+    <section class="others">
+      <h2>相关链接</h2>
+      <ul>
+        <li>个人笔记博客：<a style="color: #E74C3C" href="https://juejin.im/user/5d033162e51d455a68490b58/posts">https://juejin.im/user/5d033162e51d455a68490b58/posts</a></li>
+      </ul>
+    </section>
+    <div class="hr"></div>
+
+
+
+    <section class="jobs">
+      <h2>工作经历</h2>
+      <ol>
+        <li>
+          <header>
+            <h4 style="margin-left: 0">光迅科技股份有限公司</h4>
+            <span><time>2017年7月</time>~<time>2020年3月</time></span>
+          </header>
+          <p>
+            销售工程师
+          </p>
+        </li>
+      </ol>
+    </section>
+
+  </article>
+  <script src="./main.js"></script>
+</body>
+
+</html>
